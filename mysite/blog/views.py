@@ -18,3 +18,6 @@ def detail(request, num):
 	question = get_object_or_404(Question, id=num)
 	return render(request, "blog/detail.html", {"question":question})
 	return HttpResponse(str(num))
+
+def vote(requeest, question_id):
+	return HttpResponse("haha")
